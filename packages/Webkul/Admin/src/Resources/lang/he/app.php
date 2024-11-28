@@ -34,7 +34,7 @@ return [
 
     'notifications' => [
         'description-text' => 'לרשום את כל ההתראות',
-        'marked-success'   => 'התראה סומנה בהצלחה',
+        'marked-success'   => 'כל ההתראות סומנו כנקראו',
         'no-record'        => 'לא נמצאו רשומות',
         'of'               => 'מתוך',
         'per-page'         => 'לעמוד',
@@ -3464,6 +3464,108 @@ return [
                         'vicuna'            => 'ויקונה',
                     ],
                 ],
+
+                'sitemap' => [
+                    'info'  => 'הגדר אפשרויות מפת אתר.',
+                    'title' => 'מפת אתר',
+
+                    'settings' => [
+                        'enabled' => 'מופעל',
+                        'info'    => 'הפעל או השבת את מפת האתר לאתר שלך כדי לשפר את אופטימיזציית מנועי החיפוש ולשפר את חוויית המשתמש.',
+                        'title'   => 'הגדרות',
+                    ],
+
+                    'file-limits' => [
+                        'info'             => 'הגדר אפשרויות גבולות קובץ.',
+                        'max-file-size'    => 'גודל קובץ מרבי',
+                        'max-url-per-file' => 'מספר מרבי של כתובות URL לכל קובץ',
+                        'title'            => 'גבולות קובץ',
+                    ],
+
+                    'store-url' => [
+                        'info'  => 'הגדר אפשרויות תדירות ועדיפות לכתובת ה-URL של החנות.',
+
+                        'frequency' => [
+                            'title' => 'תדירות',
+
+                            'options' => [
+                                'always'  => 'תמיד',
+                                'daily'   => 'יומי',
+                                'hourly'  => 'כל שעה',
+                                'monthly' => 'חודשי',
+                                'never'   => 'אף פעם',
+                                'weekly'  => 'שבועי',
+                                'yearly'  => 'שנתי',
+                            ],
+                        ],
+
+                        'title'    => 'כתובת ה-URL של החנות',
+                        'priority' => 'עדיפות',
+                    ],
+
+                    'categories' => [
+                        'info'  => 'הגדר אפשרויות תדירות ועדיפות לקטגוריות.',
+
+                        'frequency' => [
+                            'title' => 'תדירות',
+
+                            'options' => [
+                                'always'  => 'תמיד',
+                                'daily'   => 'יומי',
+                                'hourly'  => 'כל שעה',
+                                'monthly' => 'חודשי',
+                                'never'   => 'אף פעם',
+                                'weekly'  => 'שבועי',
+                                'yearly'  => 'שנתי',
+                            ],
+                        ],
+
+                        'title'    => 'קטגוריות',
+                        'priority' => 'עדיפות',
+                    ],
+
+                    'products' => [
+                        'info'  => 'הגדר אפשרויות תדירות ועדיפות למוצרים.',
+
+                        'frequency' => [
+                            'title' => 'תדירות',
+
+                            'options' => [
+                                'always'  => 'תמיד',
+                                'daily'   => 'יומי',
+                                'hourly'  => 'כל שעה',
+                                'monthly' => 'חודשי',
+                                'never'   => 'אף פעם',
+                                'weekly'  => 'שבועי',
+                                'yearly'  => 'שנתי',
+                            ],
+                        ],
+
+                        'title'    => 'מוצרים',
+                        'priority' => 'עדיפות',
+                    ],
+
+                    'cms' => [
+                        'info'  => 'הגדר אפשרויות תדירות ועדיפות לעמודי CMS.',
+
+                        'frequency' => [
+                            'title' => 'תדירות',
+
+                            'options' => [
+                                'always'  => 'תמיד',
+                                'daily'   => 'יומי',
+                                'hourly'  => 'כל שעה',
+                                'monthly' => 'חודשי',
+                                'never'   => 'אף פעם',
+                                'weekly'  => 'שבועי',
+                                'yearly'  => 'שנתי',
+                            ],
+                        ],
+
+                        'title'    => 'עמודי CMS',
+                        'priority' => 'עדיפות',
+                    ],
+                ],
             ],
 
             'catalog' => [
@@ -3561,13 +3663,14 @@ return [
                     ],
 
                     'review' => [
-                        'allow-customer-review' => 'אפשר ביקורת מלקוח',
-                        'allow-guest-review'    => 'אפשר ביקורת מאורח',
-                        'display-review-count'  => 'הצג את ספירת הביקורות עבור דירוגים.',
-                        'display-star-count'    => 'הצג את ספירת הכוכבים בדירוגים.',
-                        'summary'               => 'סיכום',
-                        'title'                 => 'ביקורת',
-                        'title-info'            => 'הערכה או הערכה של משהו, הכוללת לעיתים דעות ומשוב.',
+                        'allow-customer-review'   => 'אפשר ביקורת מלקוח',
+                        'allow-guest-review'      => 'אפשר ביקורת מאורח',
+                        'censoring-reviewer-name' => 'צנזור שם המבקר',
+                        'display-review-count'    => 'הצג את ספירת הביקורות עבור דירוגים.',
+                        'display-star-count'      => 'הצג את ספירת הכוכבים בדירוגים.',
+                        'summary'                 => 'סיכום',
+                        'title'                   => 'ביקורת',
+                        'title-info'              => 'הערכה או הערכה של משהו, הכוללת לעיתים דעות ומשוב.',
                     ],
 
                     'attribute' => [

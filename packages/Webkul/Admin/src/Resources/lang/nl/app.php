@@ -34,7 +34,7 @@ return [
 
     'notifications' => [
         'description-text' => 'Alle meldingen weergeven',
-        'marked-success'   => 'Melding Succesvol Gemarkeerd',
+        'marked-success'   => 'Alle meldingen zijn als gelezen gemarkeerd',
         'no-record'        => 'Geen Records Gevonden',
         'of'               => 'van',
         'per-page'         => 'Per pagina',
@@ -3464,6 +3464,108 @@ return [
                         'vicuna'            => 'Vicuna',
                     ],
                 ],
+
+                'sitemap' => [
+                    'info'  => 'Stel sitemapopties in.',
+                    'title' => 'Sitemap',
+
+                    'settings' => [
+                        'enabled' => 'Ingeschakeld',
+                        'info'    => 'Schakel de sitemap in of uit voor uw website om de zoekmachineoptimalisatie te verbeteren en de gebruikerservaring te verbeteren.',
+                        'title'   => 'Instellingen',
+                    ],
+
+                    'file-limits' => [
+                        'info'             => 'Stel bestandslimietopties in.',
+                        'max-file-size'    => 'Maximale bestandsgrootte',
+                        'max-url-per-file' => 'Maximaal aantal URL\'s per bestand',
+                        'title'            => 'Bestandslimieten',
+                    ],
+
+                    'store-url' => [
+                        'info'  => 'Stel frequentie- en prioriteitsopties in voor de winkel-URL.',
+
+                        'frequency' => [
+                            'title' => 'Frequentie',
+
+                            'options' => [
+                                'always'  => 'Altijd',
+                                'daily'   => 'Dagelijks',
+                                'hourly'  => 'Elk uur',
+                                'monthly' => 'Maandelijks',
+                                'never'   => 'Nooit',
+                                'weekly'  => 'Wekelijks',
+                                'yearly'  => 'Jaarlijks',
+                            ],
+                        ],
+
+                        'title'    => 'Winkel URL',
+                        'priority' => 'Prioriteit',
+                    ],
+
+                    'categories' => [
+                        'info'  => 'Stel frequentie- en prioriteitsopties in voor de categorieën.',
+
+                        'frequency' => [
+                            'title' => 'Frequentie',
+
+                            'options' => [
+                                'always'  => 'Altijd',
+                                'daily'   => 'Dagelijks',
+                                'hourly'  => 'Elk uur',
+                                'monthly' => 'Maandelijks',
+                                'never'   => 'Nooit',
+                                'weekly'  => 'Wekelijks',
+                                'yearly'  => 'Jaarlijks',
+                            ],
+                        ],
+
+                        'title'    => 'Categorieën',
+                        'priority' => 'Prioriteit',
+                    ],
+
+                    'products' => [
+                        'info'  => 'Stel frequentie- en prioriteitsopties in voor de producten.',
+
+                        'frequency' => [
+                            'title' => 'Frequentie',
+
+                            'options' => [
+                                'always'  => 'Altijd',
+                                'daily'   => 'Dagelijks',
+                                'hourly'  => 'Elk uur',
+                                'monthly' => 'Maandelijks',
+                                'never'   => 'Nooit',
+                                'weekly'  => 'Wekelijks',
+                                'yearly'  => 'Jaarlijks',
+                            ],
+                        ],
+
+                        'title'    => 'Producten',
+                        'priority' => 'Prioriteit',
+                    ],
+
+                    'cms' => [
+                        'info'  => 'Stel frequentie- en prioriteitsopties in voor de CMS-pagina\'s.',
+
+                        'frequency' => [
+                            'title' => 'Frequentie',
+
+                            'options' => [
+                                'always'  => 'Altijd',
+                                'daily'   => 'Dagelijks',
+                                'hourly'  => 'Elk uur',
+                                'monthly' => 'Maandelijks',
+                                'never'   => 'Nooit',
+                                'weekly'  => 'Wekelijks',
+                                'yearly'  => 'Jaarlijks',
+                            ],
+                        ],
+
+                        'title'    => 'CMS Pagina\'s',
+                        'priority' => 'Prioriteit',
+                    ],
+                ],
             ],
 
             'catalog' => [
@@ -3561,13 +3663,14 @@ return [
                     ],
 
                     'review' => [
-                        'allow-customer-review' => 'Klantbeoordeling toestaan',
-                        'allow-guest-review'    => 'Gastbeoordeling toestaan',
-                        'display-review-count'  => 'Geef het aantal recensies voor beoordelingen weer.',
-                        'display-star-count'    => 'Geef het aantal sterren in beoordelingen weer.',
-                        'summary'               => 'Samenvatting',
-                        'title'                 => 'Beoordeling',
-                        'title-info'            => 'Evaluatie of beoordeling van iets, vaak met meningen en feedback.',
+                        'allow-customer-review'   => 'Klantbeoordeling toestaan',
+                        'allow-guest-review'      => 'Gastbeoordeling toestaan',
+                        'censoring-reviewer-name' => 'Naam recensent censureren',
+                        'display-review-count'    => 'Geef het aantal recensies voor beoordelingen weer.',
+                        'display-star-count'      => 'Geef het aantal sterren in beoordelingen weer.',
+                        'summary'                 => 'Samenvatting',
+                        'title'                   => 'Beoordeling',
+                        'title-info'              => 'Evaluatie of beoordeling van iets, vaak met meningen en feedback.',
                     ],
 
                     'attribute' => [

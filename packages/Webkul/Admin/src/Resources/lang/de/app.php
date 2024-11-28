@@ -34,7 +34,7 @@ return [
 
     'notifications' => [
         'description-text' => 'Alle Benachrichtigungen auflisten',
-        'marked-success'   => 'Benachrichtigung erfolgreich markiert',
+        'marked-success'   => 'Alle Benachrichtigungen wurden als gelesen markiert',
         'no-record'        => 'Kein Datensatz gefunden',
         'of'               => 'von',
         'per-page'         => 'Pro Seite',
@@ -3464,6 +3464,108 @@ return [
                         'vicuna'            => 'Vicuna',
                     ],
                 ],
+
+                'sitemap' => [
+                    'info'  => 'Sitemap-Optionen festlegen.',
+                    'title' => 'Sitemap',
+
+                    'settings' => [
+                        'enabled' => 'Aktiviert',
+                        'info'    => 'Aktivieren oder deaktivieren Sie die Sitemap für Ihre Website, um die Suchmaschinenoptimierung zu verbessern und die Benutzererfahrung zu steigern.',
+                        'title'   => 'Einstellungen',
+                    ],
+
+                    'file-limits' => [
+                        'info'             => 'Dateigrößenbeschränkungen festlegen.',
+                        'max-file-size'    => 'Maximale Dateigröße',
+                        'max-url-per-file' => 'Maximale Anzahl von URLs pro Datei',
+                        'title'            => 'Dateibeschränkungen',
+                    ],
+
+                    'store-url' => [
+                        'info'  => 'Häufigkeit und Prioritätsoption für die Store-URL festlegen.',
+
+                        'frequency' => [
+                            'title' => 'Häufigkeit',
+
+                            'options' => [
+                                'always'  => 'Immer',
+                                'daily'   => 'Täglich',
+                                'hourly'  => 'Stündlich',
+                                'monthly' => 'Monatlich',
+                                'never'   => 'Nie',
+                                'weekly'  => 'Wöchentlich',
+                                'yearly'  => 'Jährlich',
+                            ],
+                        ],
+
+                        'title'    => 'Store-URL',
+                        'priority' => 'Priorität',
+                    ],
+
+                    'categories' => [
+                        'info'  => 'Häufigkeit und Prioritätsoption für die Kategorien festlegen.',
+
+                        'frequency' => [
+                            'title' => 'Häufigkeit',
+
+                            'options' => [
+                                'always'  => 'Immer',
+                                'daily'   => 'Täglich',
+                                'hourly'  => 'Stündlich',
+                                'monthly' => 'Monatlich',
+                                'never'   => 'Nie',
+                                'weekly'  => 'Wöchentlich',
+                                'yearly'  => 'Jährlich',
+                            ],
+                        ],
+
+                        'title'    => 'Kategorien',
+                        'priority' => 'Priorität',
+                    ],
+
+                    'products' => [
+                        'info'  => 'Häufigkeit und Prioritätsoption für die Produkte festlegen.',
+
+                        'frequency' => [
+                            'title' => 'Häufigkeit',
+
+                            'options' => [
+                                'always'  => 'Immer',
+                                'daily'   => 'Täglich',
+                                'hourly'  => 'Stündlich',
+                                'monthly' => 'Monatlich',
+                                'never'   => 'Nie',
+                                'weekly'  => 'Wöchentlich',
+                                'yearly'  => 'Jährlich',
+                            ],
+                        ],
+
+                        'title'    => 'Produkte',
+                        'priority' => 'Priorität',
+                    ],
+
+                    'cms' => [
+                        'info'  => 'Häufigkeit und Prioritätsoption für die CMS-Seiten festlegen.',
+
+                        'frequency' => [
+                            'title' => 'Häufigkeit',
+
+                            'options' => [
+                                'always'  => 'Immer',
+                                'daily'   => 'Täglich',
+                                'hourly'  => 'Stündlich',
+                                'monthly' => 'Monatlich',
+                                'never'   => 'Nie',
+                                'weekly'  => 'Wöchentlich',
+                                'yearly'  => 'Jährlich',
+                            ],
+                        ],
+
+                        'title'    => 'CMS-Seiten',
+                        'priority' => 'Priorität',
+                    ],
+                ],
             ],
 
             'catalog' => [
@@ -3561,13 +3663,14 @@ return [
                     ],
 
                     'review' => [
-                        'allow-customer-review' => 'Kundenbewertungen zulassen',
-                        'allow-guest-review'    => 'Gastbewertungen zulassen',
-                        'display-review-count'  => 'Zeigen Sie die Anzahl der Rezensionen für Bewertungen an.',
-                        'display-star-count'    => 'Zeigen Sie die Anzahl der Sterne in Bewertungen an.',
-                        'summary'               => 'Zusammenfassung',
-                        'title'                 => 'Bewertung',
-                        'title-info'            => 'Bewertung oder Einschätzung von etwas, oft mit Meinungen und Feedback.',
+                        'allow-customer-review'   => 'Kundenbewertungen zulassen',
+                        'allow-guest-review'      => 'Gastbewertungen zulassen',
+                        'censoring-reviewer-name' => 'Zensur des Rezensentennamens',
+                        'display-review-count'    => 'Zeigen Sie die Anzahl der Rezensionen für Bewertungen an.',
+                        'display-star-count'      => 'Zeigen Sie die Anzahl der Sterne in Bewertungen an.',
+                        'summary'                 => 'Zusammenfassung',
+                        'title'                   => 'Bewertung',
+                        'title-info'              => 'Bewertung oder Einschätzung von etwas, oft mit Meinungen und Feedback.',
                     ],
 
                     'attribute' => [

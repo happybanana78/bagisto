@@ -175,7 +175,7 @@
 
                     @if (core()->getConfigData('customer.captcha.credentials.status'))
                         <div class="mb-5 flex">
-                            {!! Captcha::render() !!}
+                            {!! \Webkul\Customer\Facades\Captcha::render() !!}
                         </div>
                     @endif
 
@@ -187,7 +187,6 @@
                                 name="is_subscribed"
                                 id="is-subscribed"
                                 class="peer hidden"
-                                onchange="switchVisibility()"
                             />
 
                             <label
@@ -242,6 +241,6 @@
 	</div>
 
     @push('scripts')
-        {!! Captcha::renderJS() !!}
+        {!! \Webkul\Customer\Facades\Captcha::renderJS() !!}
     @endpush
 </x-shop::layouts>

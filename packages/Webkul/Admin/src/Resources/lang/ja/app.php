@@ -34,7 +34,7 @@ return [
 
     'notifications' => [
         'description-text' => 'すべての通知をリストアップ',
-        'marked-success'   => 'お知らせが正常にマークされました',
+        'marked-success'   => 'すべての通知が既読としてマークされました',
         'no-record'        => '記録が見つかりません',
         'of'               => 'の',
         'per-page'         => 'ページごと',
@@ -3464,6 +3464,108 @@ return [
                         'vicuna'            => 'ビクーニャ',
                     ],
                 ],
+
+                'sitemap' => [
+                    'info'  => 'サイトマップのオプションを設定します。',
+                    'title' => 'サイトマップ',
+
+                    'settings' => [
+                        'enabled' => '有効',
+                        'info'    => 'サイトマップを有効または無効にして、検索エンジン最適化を改善し、ユーザーエクスペリエンスを向上させます。',
+                        'title'   => '設定',
+                    ],
+
+                    'file-limits' => [
+                        'info'             => 'ファイル制限オプションを設定します。',
+                        'max-file-size'    => '最大ファイルサイズ',
+                        'max-url-per-file' => 'ファイルあたりの最大URL数',
+                        'title'            => 'ファイル制限',
+                    ],
+
+                    'store-url' => [
+                        'info'  => 'ストアURLの頻度と優先順位のオプションを設定します。',
+
+                        'frequency' => [
+                            'title' => '頻度',
+
+                            'options' => [
+                                'always'  => '常に',
+                                'daily'   => '毎日',
+                                'hourly'  => '毎時',
+                                'monthly' => '毎月',
+                                'never'   => '決してない',
+                                'weekly'  => '毎週',
+                                'yearly'  => '毎年',
+                            ],
+                        ],
+
+                        'title'    => 'ストアURL',
+                        'priority' => '優先順位',
+                    ],
+
+                    'categories' => [
+                        'info'  => 'カテゴリーの頻度と優先順位のオプションを設定します。',
+
+                        'frequency' => [
+                            'title' => '頻度',
+
+                            'options' => [
+                                'always'  => '常に',
+                                'daily'   => '毎日',
+                                'hourly'  => '毎時',
+                                'monthly' => '毎月',
+                                'never'   => '決してない',
+                                'weekly'  => '毎週',
+                                'yearly'  => '毎年',
+                            ],
+                        ],
+
+                        'title'    => 'カテゴリー',
+                        'priority' => '優先順位',
+                    ],
+
+                    'products' => [
+                        'info'  => '製品の頻度と優先順位のオプションを設定します。',
+
+                        'frequency' => [
+                            'title' => '頻度',
+
+                            'options' => [
+                                'always'  => '常に',
+                                'daily'   => '毎日',
+                                'hourly'  => '毎時',
+                                'monthly' => '毎月',
+                                'never'   => '決してない',
+                                'weekly'  => '毎週',
+                                'yearly'  => '毎年',
+                            ],
+                        ],
+
+                        'title'    => '製品',
+                        'priority' => '優先順位',
+                    ],
+
+                    'cms' => [
+                        'info'  => 'CMSページの頻度と優先順位のオプションを設定します。',
+
+                        'frequency' => [
+                            'title' => '頻度',
+
+                            'options' => [
+                                'always'  => '常に',
+                                'daily'   => '毎日',
+                                'hourly'  => '毎時',
+                                'monthly' => '毎月',
+                                'never'   => '決してない',
+                                'weekly'  => '毎週',
+                                'yearly'  => '毎年',
+                            ],
+                        ],
+
+                        'title'    => 'CMSページ',
+                        'priority' => '優先順位',
+                    ],
+                ],
             ],
 
             'catalog' => [
@@ -3561,13 +3663,14 @@ return [
                     ],
 
                     'review' => [
-                        'allow-customer-review' => '顧客レビューを許可する',
-                        'allow-guest-review'    => 'ゲストレビューを許可する',
-                        'display-review-count'  => '評価のレビュー数を表示します。',
-                        'display-star-count'    => '評価に星の数を表示します。',
-                        'summary'               => 'まとめ',
-                        'title'                 => 'レビュー',
-                        'title-info'            => '何かを評価または評価することで、しばしば意見やフィードバックが含まれます。',
+                        'allow-customer-review'   => '顧客レビューを許可する',
+                        'allow-guest-review'      => 'ゲストレビューを許可する',
+                        'censoring-reviewer-name' => 'レビュアー名の検閲',
+                        'display-review-count'    => '評価のレビュー数を表示します。',
+                        'display-star-count'      => '評価に星の数を表示します。',
+                        'summary'                 => 'まとめ',
+                        'title'                   => 'レビュー',
+                        'title-info'              => '何かを評価または評価することで、しばしば意見やフィードバックが含まれます。',
                     ],
 
                     'attribute' => [

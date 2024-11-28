@@ -34,7 +34,7 @@ return [
 
     'notifications' => [
         'description-text' => 'Lister toutes les notifications',
-        'marked-success'   => 'Notification marquée avec succès',
+        'marked-success'   => 'Toutes les notifications ont été marquées comme lues',
         'no-record'        => 'Aucun enregistrement trouvé',
         'of'               => 'de',
         'per-page'         => 'Par page',
@@ -3464,6 +3464,108 @@ return [
                         'vicuna'            => 'Vicuna',
                     ],
                 ],
+
+                'sitemap' => [
+                    'info'  => 'Configurer les options du plan du site.',
+                    'title' => 'Plan du Site',
+
+                    'settings' => [
+                        'enabled' => 'Activé',
+                        'info'    => 'Activer ou désactiver le plan du site pour votre site web afin d\'améliorer le référencement et d\'améliorer l\'expérience utilisateur.',
+                        'title'   => 'Paramètres',
+                    ],
+
+                    'file-limits' => [
+                        'info'             => 'Configurer les options de limites de fichier.',
+                        'max-file-size'    => 'Taille maximale du fichier',
+                        'max-url-per-file' => 'Nombre maximal d\'URL par fichier',
+                        'title'            => 'Limites de Fichier',
+                    ],
+
+                    'store-url' => [
+                        'info'  => 'Configurer les options de fréquence et de priorité pour l\'URL du magasin.',
+
+                        'frequency' => [
+                            'title' => 'Fréquence',
+
+                            'options' => [
+                                'always'  => 'Toujours',
+                                'daily'   => 'Quotidiennement',
+                                'hourly'  => 'Toutes les heures',
+                                'monthly' => 'Mensuellement',
+                                'never'   => 'Jamais',
+                                'weekly'  => 'Hebdomadairement',
+                                'yearly'  => 'Annuellement',
+                            ],
+                        ],
+
+                        'title'    => 'URL du Magasin',
+                        'priority' => 'Priorité',
+                    ],
+
+                    'categories' => [
+                        'info'  => 'Configurer les options de fréquence et de priorité pour les catégories.',
+
+                        'frequency' => [
+                            'title' => 'Fréquence',
+
+                            'options' => [
+                                'always'  => 'Toujours',
+                                'daily'   => 'Quotidiennement',
+                                'hourly'  => 'Toutes les heures',
+                                'monthly' => 'Mensuellement',
+                                'never'   => 'Jamais',
+                                'weekly'  => 'Hebdomadairement',
+                                'yearly'  => 'Annuellement',
+                            ],
+                        ],
+
+                        'title'    => 'Catégories',
+                        'priority' => 'Priorité',
+                    ],
+
+                    'products' => [
+                        'info'  => 'Configurer les options de fréquence et de priorité pour les produits.',
+
+                        'frequency' => [
+                            'title' => 'Fréquence',
+
+                            'options' => [
+                                'always'  => 'Toujours',
+                                'daily'   => 'Quotidiennement',
+                                'hourly'  => 'Toutes les heures',
+                                'monthly' => 'Mensuellement',
+                                'never'   => 'Jamais',
+                                'weekly'  => 'Hebdomadairement',
+                                'yearly'  => 'Annuellement',
+                            ],
+                        ],
+
+                        'title'    => 'Produits',
+                        'priority' => 'Priorité',
+                    ],
+
+                    'cms' => [
+                        'info'  => 'Configurer les options de fréquence et de priorité pour les pages CMS.',
+
+                        'frequency' => [
+                            'title' => 'Fréquence',
+
+                            'options' => [
+                                'always'  => 'Toujours',
+                                'daily'   => 'Quotidiennement',
+                                'hourly'  => 'Toutes les heures',
+                                'monthly' => 'Mensuellement',
+                                'never'   => 'Jamais',
+                                'weekly'  => 'Hebdomadairement',
+                                'yearly'  => 'Annuellement',
+                            ],
+                        ],
+
+                        'title'    => 'Pages CMS',
+                        'priority' => 'Priorité',
+                    ],
+                ],
             ],
 
             'catalog' => [
@@ -3561,13 +3663,14 @@ return [
                     ],
 
                     'review' => [
-                        'allow-customer-review' => 'Autoriser les avis des clients',
-                        'allow-guest-review'    => 'Autoriser les avis des invités',
-                        'display-review-count'  => 'Affichez le nombre d\'avis pour les notes.',
-                        'display-star-count'    => 'Affichez le nombre d\'étoiles dans les notes.',
-                        'summary'               => 'Résumé',
-                        'title'                 => 'Avis',
-                        'title-info'            => 'Évaluation ou évaluation de quelque chose, impliquant souvent des opinions et des commentaires.',
+                        'allow-customer-review'   => 'Autoriser les avis des clients',
+                        'allow-guest-review'      => 'Autoriser les avis des invités',
+                        'censoring-reviewer-name' => 'Censurer le nom du critique',
+                        'display-review-count'    => 'Affichez le nombre d\'avis pour les notes.',
+                        'display-star-count'      => 'Affichez le nombre d\'étoiles dans les notes.',
+                        'summary'                 => 'Résumé',
+                        'title'                   => 'Avis',
+                        'title-info'              => 'Évaluation ou évaluation de quelque chose, impliquant souvent des opinions et des commentaires.',
                     ],
 
                     'attribute' => [
